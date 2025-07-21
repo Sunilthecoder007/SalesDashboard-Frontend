@@ -1,0 +1,125 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+/* @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap'); */
+
+/* Definition of the design system. All colors, gradients, fonts, etc should be defined here. 
+All colors MUST be HSL.
+*/
+
+
+/* body {
+  font-family: "Inter", sans-serif;
+} */
+
+
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+
+    --primary: 187 81% 24%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 210 40% 96.1%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+
+    --muted: 210 40% 96.1%;
+    --muted-foreground: 215.4 16.3% 46.9%;
+
+    --accent: 180 100% 85%;
+    --accent-foreground: 180 100% 25%;
+
+    --destructive: 0 84.2% 60.2%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 214.3 31.8% 91.4%;
+    --input: 214.3 31.8% 91.4%;
+    --ring: 188 88% 22%;
+
+    --radius: 0.5rem;
+
+    --sidebar-background: 0 0% 29.02%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 0 0% 35%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 35%;
+    --sidebar-ring: 0 0% 40%;
+
+    /* Dashboard specific colors */
+    --dashboard-bg: 0 0% 91%;
+    --chart-teal: 191 58% 71%;
+    --chart-blue: 200 100% 70%;
+    --chart-orange: 30 100% 70%;
+    --chart-red: 0 70% 70%;
+    --success-green: 120 60% 50%;
+    --profit-pink: 320 70% 70%;
+  }
+
+  .dark {
+    --background: 232 40% 14%;
+    --foreground: 210 40% 98%;
+
+    --card: 227.27 30.28% 21.37%;
+    --card-foreground: 210 40% 98%;
+
+    --popover: 240 10% 12%;
+    --popover-foreground: 210 40% 98%;
+
+    --primary: 232 40% 14%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 240 10% 15%;
+    --secondary-foreground: 210 40% 98%;
+
+    --muted: 240 10% 15%;
+    --muted-foreground: 215 20.2% 65.1%;
+
+    --accent: 240 10% 15%;
+    --accent-foreground: 210 40% 98%;
+
+    --destructive: 0 62.8% 30.6%;
+    --destructive-foreground: 210 40% 98%;
+
+    --border: 240 10% 15%;
+    --input: 240 10% 15%;
+    --ring: 180 100% 25%;
+
+    --sidebar-background: 232 40% 14%;
+    --sidebar-foreground: 0 0% 100%;
+    --sidebar-primary: 0 0% 35%;
+    --sidebar-primary-foreground: 0 0% 100%;
+    --sidebar-accent: 232 40% 17%;
+    --sidebar-accent-foreground: 0 0% 100%;
+    --sidebar-border: 0 0% 25%;
+    --sidebar-ring: 0 0% 40%;
+
+    /* Dashboard specific colors for dark mode */
+    --dashboard-bg: 232 40% 14%;
+    --chart-teal: 180 100% 80%;
+    --chart-blue: 200 100% 70%;
+    --chart-orange: 30 100% 70%;
+    --chart-red: 0 70% 70%;
+    --success-green: 120 60% 50%;
+    --profit-pink: 320 70% 70%;
+  }
+}
+
+@layer base {
+  * {
+    @apply border-border;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+  }
+}
